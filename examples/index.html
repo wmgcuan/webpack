@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../dist/bundle.js"></script>
+  </head>
+  <body>
+    webpack命令<br />
+    $ webpack --config XXX.js
+    //使用另一份配置文件（比如webpack.config2.js）来打包<br />
+
+    $ webpack --watch //监听变动并自动打包<br />
+
+    $ webpack -p//压缩混淆脚本，这个非常非常重要！<br />
+
+    $ webpack -d//生成map映射文件，告知哪些模块被最终打包到哪里了其中的<br />
+    $ webpack --progress //显示进度条<br />
+    $ webpack --color //添加颜色<br />
+
+    当直接运行 $ webpack 时,会依赖全局变量mode, --mode development --mode
+    production
+  </body>
+</html>
+<script>
+  console.log(pass.Lib)
+</script>

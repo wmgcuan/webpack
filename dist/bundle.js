@@ -1,3 +1,4 @@
+/*! 版权所有，翻版必究 */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -104,7 +105,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\nconst b = '模块001'\nconsole.log(b)\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (b);\n\n//# sourceURL=webpack://pass/./src/001.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\nconst b = '模块001'\nconsole.log(b)\n// export import 用法请参考es6项目\n/* harmony default export */ __webpack_exports__[\"default\"] = (b);\n\n//# sourceURL=webpack://pass/./src/001.js?");
 
 /***/ }),
 
@@ -116,7 +117,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n\nconst b = '模块001'\ncons
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Lib\", function() { return Lib; });\n/* harmony import */ var _001__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./001 */ \"./src/001.js\");\n\n\nlet a = '入口文件'\nconsole.log(a)\nconsole.log(_001__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n\nconst Lib = _001__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n\n//# sourceURL=webpack://pass/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Lib\", function() { return Lib; });\n/* harmony import */ var _001__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./001 */ \"./src/001.js\");\n\n\nlet a = '入口文件'\nconsole.log(a)\nconsole.log(_001__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n// export import 用法请参考es6项目\nconst Lib = _001__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\n\n//# sourceURL=webpack://pass/./src/index.js?");
 
 /***/ })
 
