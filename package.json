@@ -7,14 +7,17 @@
     "xu": "./bin/xu.js"
   },
   "scripts": {
-    "build:dev": "webpack --mode development",
-    "build:pro": "webpack --mode production",
+    "build:dev": "webpack --config build/webpack.dev.config.js",
+    "build:pro": "webpack --config build/webpack.pro.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ewan",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^3.10.0",
+    "@babel/preset-env": "^7.0.0-beta.35"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

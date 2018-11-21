@@ -1,7 +1,6 @@
-import name from './001'
+let func = () => {}
+const NUM = 45
+let arr = [1, 2, 4]
+let arrB = arr.map(item => item * 2)
 
-let a = '入口文件'
-console.log(a)
-console.log(name)
-// export import 用法请参考es6项目
-export const Lib = name
+console.log('new Set(arrB)', new Set(arrB))
