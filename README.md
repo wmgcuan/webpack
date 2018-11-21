@@ -1,15 +1,46 @@
 # webpack
 
-```
-// 全局安装
-sudo npm install -g webpack@3.10.0
-// 本地安装
-npm install --save-dev webpack@3.10.0
-```
+全局安装 本地安装
 
 ```
 webpack src/index.js dist/index.js
 webpack --config build/webpack.pro.config.js
+```
+
+### package.json
+
+```
+"dependencies": {
+    "babel-polyfill": "^6.26.0", // 全局垫片为应用准备 npm install babel-polyfill@6.26.0 --save 使用：import "babel-polyfill"
+    "@babel/runtime": "^7.0.0-beta.35", // 局部垫片为开发框架准备 npm install @babel/runtime@7.0.0-beta.35 --save 使用：.babelrc
+},
+"devDependencies": {
+    "webpack": "^3.10.0", // npm install webpack@3.10.0 --save-dev
+    "babel-loader": "^8.0.0-beta.0", // ES6兼容 npm install babel-loader@8.0.0-beta.0 @babel/core --save-dev
+    "@babel/core": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.35", // babel预设 npm install @babel/preset-env --save-dev
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.35", // 局部垫片为开发框架准备 npm install @babel/plugin-transform-runtime@7.0.0-beta.35 --save-dev
+},
+```
+
+### .babelrc
+
+```
+{
+  // 预设
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["> 1%", "last 2 versions"]
+        }
+      }
+    ]
+  ],
+  // 运行时
+  "plugins": ["@babel/transform-runtime"]
+}
 ```
 
 ### 命令选项
